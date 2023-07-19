@@ -6,5 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'angularApp';
+   title = 'angularApp7';
+  
+    data: string = 'Angular Batch 7';
+
+   getDataFromChild(value){
+   console.log(value);
+   
+   }
 }
