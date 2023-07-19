@@ -9,6 +9,32 @@
  <div>
     <img [src]="imageURL" alt="">
 </div>
+
 <div>
-    <button [disabled]="isDisabled">Click Me</button>
+    <button [disabled]="isDisabled" (click)="SaveData()" >Click Me</button>
+</div>
+
+ <h4>Two-Way Data Binding</h4>
+<div>
+    <input type="text" placeholder="Please enter your Department" [(ngModel)]="department" >
+</div>  
+ 
+<h6> Two-Way Data Binding Assignment</h6>
+<div>
+   <ol>
+      <li>Add a Input field which updates a property ('username') via Two-Way-Binding</li>
+      <label>UserName:</label>
+      <input  type="text" placeholder="Please enter your Name" [(ngModel)]="department" >
+      <li>Output the username property via String Interpolation (in a paragraph below the input)</li>
+      <label>Input paragraph Tag ==></label>
+      <output type="text" ></output>
+      <li>Output the username property via String Interpolation (in a paragraph below the input)</li>
+      <li>Upon clicking the button, the username should be reset to an empty string</li>
+      <button [disabled]="isDisabled" (click)="SaveData()" >Reset</button>
+
+   </ol>
+</div> 
+
+ <div>
+    {{department}}
 </div>
