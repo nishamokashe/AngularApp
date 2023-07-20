@@ -11,6 +11,7 @@ import { AssigmentComponent } from './assigment/assigment.component';
 import { NgIfComponent } from './ng-if/ng-if.component';
 import { NgForComponent } from './ng-for/ng-for.component';
 import { NgSwitchComponent } from './ng-switch/ng-switch.component';
+import { NgCheckboxComponent } from './ng-checkbox/ng-checkbox.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { NgSwitchComponent } from './ng-switch/ng-switch.component';
     AssigmentComponent,
     NgIfComponent,
     NgForComponent,
-    NgSwitchComponent
+    NgSwitchComponent,
+    NgCheckboxComponent
   ],
   imports: [
     BrowserModule,
