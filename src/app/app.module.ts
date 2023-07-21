@@ -12,6 +12,8 @@ import { NgIfComponent } from './ng-if/ng-if.component';
 import { NgForComponent } from './ng-for/ng-for.component';
 import { NgSwitchComponent } from './ng-switch/ng-switch.component';
 import { NgCheckboxComponent } from './ng-checkbox/ng-checkbox.component';
+import { AttributeDirectiveComponent } from './attribute-directive/attribute-directive.component';
+import { CustomdirDirective } from './customdir.directive';
 
 @NgModule({
   declarations: [
@@ -23,7 +25,9 @@ import { NgCheckboxComponent } from './ng-checkbox/ng-checkbox.component';
     NgIfComponent,
     NgForComponent,
     NgSwitchComponent,
-    NgCheckboxComponent
+    NgCheckboxComponent,
+    AttributeDirectiveComponent,
+    CustomdirDirective
   ],
   imports: [
     BrowserModule,
