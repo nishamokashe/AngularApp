@@ -9,7 +9,7 @@ export class NgIfComponent implements OnInit {
 
   show:boolean=true;
 
-  showAction:boolean = true;
+  showAction:boolean = false;
   constructor() { }
 
   ngOnInit() {
