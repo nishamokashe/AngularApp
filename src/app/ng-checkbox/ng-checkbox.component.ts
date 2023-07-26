@@ -10,7 +10,7 @@ export class NgCheckboxComponent implements OnInit {
   superhero:string;
 
   title : string = 'Web Development Courses and Fees';
-  courses: webCours []=[
+  courses:any []=[
     {courseName:'Certificate Courses in Web Development',CourseFees:'INR 10,000 to INR 40,000' },
     {courseName:'Diploma Courses in Web Development',CourseFees:'INR 50,000 to INR 80,000 ' },
     {courseName:'UG Courses in Web Development',CourseFees:'INR 20,000 to INR 10,00,000' }
