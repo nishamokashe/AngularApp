@@ -14,6 +14,8 @@ import { NgSwitchComponent } from './ng-switch/ng-switch.component';
 import { NgCheckboxComponent } from './ng-checkbox/ng-checkbox.component';
 import { AttributeDirectiveComponent } from './attribute-directive/attribute-directive.component';
 import { CustomdirDirective } from './customdir.directive';
+import { SimpleformComponent } from './simpleform/simpleform.component';
+import { FormAssignmentComponent } from './form-assignment/form-assignment.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +29,9 @@ import { CustomdirDirective } from './customdir.directive';
     NgSwitchComponent,
     NgCheckboxComponent,
     AttributeDirectiveComponent,
-    CustomdirDirective
+    CustomdirDirective,
+    SimpleformComponent,
+    FormAssignmentComponent
   ],
   imports: [
     BrowserModule,
