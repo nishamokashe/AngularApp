@@ -1,0 +1,36 @@
+input,select,textarea,#date{
+    outline: 0;
+    border-width: 0 0 2px;
+    border-color: blue;
+    width: 400px;
+    box-shadow: 0 0 15px #0a7ee397;
+    
+}
+
+input.ng-invalid.ng-touched,
+select.ng-invalid.ng-touched,
+#date.ng-invalid.ng-touched
+{
+    outline: 0;
+    border-width: 0 0 2px;
+    border-color: red;
+    box-shadow: 0 0 15px #da0808ba;
+}
+input.ng-valid,
+select.ng-valid.ng-touched,
+#date.ng-valid.ng-touched
+{
+    outline: 0;
+    border-width: 0 0 2px;
+    border-color:rgba(16, 248, 16, 0.434);
+    box-shadow: 0 0 15px #6ed712cf;
+}
+.phone{
+    width: 292px;
+}
+#word{
+    margin-left: 180px;
+}
+#center{
+    text-align: center;
+}
