@@ -7,15 +7,15 @@ import { NgForm } from '@angular/forms';
   styleUrls: ['./simpleform.component.css']
 })
 export class SimpleformComponent implements OnInit {
-  isFormSubmitted = false;
+  isCorrect=true;
+  isFormSubmitted=false;
   username = '';
-  defaultCourseValue = 'JavaScript';
+  defaultCourseValue ='JavaScript';
   genders = [
     { id: '1', value: 'Male'},
     { id: '2', value: 'Female'},
-    { id: '3', value: 'Other'},
-
   ]
+
   formData = {
     username: '',
     email: '',
@@ -24,18 +24,41 @@ export class SimpleformComponent implements OnInit {
     state: '',
     gender:''
    }
+
   constructor() { }
 
-  ngOnInit() {
+  ngOnInit() {  
   }
-  OnSubmit(form: NgForm) {
-    this.  isFormSubmitted = true;
+  
+  // checkDomain(inputValue){
+  //   console.log('inputvalue',inputValue)
+  //   this.isCorrect=inputValue.includes('codemindtechnology.com');
+  //   console.log(this.isCorrect)
+  // }
+  checkDomain(inputValue) {
+    console.log(inputValue);
 
+    const domain = inputValue.substring(inputValue.lastIndexOf('@') + 1);
+    console.log('domain ',domain);
+
+    if(domain == 'codemindtechnology.com') 
+    {
+      // false
+      this.isCorrect = false;
+    }
+    else {
+      // true
+      this.isCorrect = true;
+    }
+  }
+OnSubmit(form: NgForm) {
+  this.isFormSubmitted=true;
     console.log('form submitted', form);
     let email = form.value.email;
     console.log('Email is', email);
+
     let country = form.value.address.country;
-    console.log('user input country name is', country)
+    console.log('user input country name is', country);
 
     this.formData.username = form.value.username;
     this.formData.email = form.value.email;
@@ -43,8 +66,14 @@ export class SimpleformComponent implements OnInit {
     this.formData.country = form.value.address.country;
     this.formData.state = form.value.address.state;
     this.formData.gender = form.value.gender;
-    // reset the form controls
+    
+    // reser the form controls
     form.reset();
-
+    form.controls['course'].setValue('javaScript')
+  // objaddress.controls['country'].patchValue('India');
   }
+
+}
+function checkDomain(event: Event) {
+  throw new Error('Function not implemented.');
 }
