@@ -19,6 +19,8 @@ import { FormAssignmentComponent } from './form-assignment/form-assignment.compo
 import { SimpleformoneComponent } from './simpleformone/simpleformone.component';
 import { ReactiveformComponent } from './reactiveform/reactiveform.component';
 import { TasktempletFromComponent } from './tasktemplet-from/tasktemplet-from.component';
+import { Comp1Component } from './comp1/comp1.component';
+import { Comp2Component } from './comp2/comp2.component';
 
 
 @NgModule({
@@ -39,6 +41,8 @@ import { TasktempletFromComponent } from './tasktemplet-from/tasktemplet-from.co
     SimpleformoneComponent,
     ReactiveformComponent,
     TasktempletFromComponent,
+    Comp1Component,
+    Comp2Component,
 
   ],
   imports: [
