@@ -19,8 +19,14 @@ import { FormAssignmentComponent } from './form-assignment/form-assignment.compo
 import { SimpleformoneComponent } from './simpleformone/simpleformone.component';
 import { ReactiveformComponent } from './reactiveform/reactiveform.component';
 import { TasktempletFromComponent } from './tasktemplet-from/tasktemplet-from.component';
-import { Comp1Component } from './comp1/comp1.component';
-import { Comp2Component } from './comp2/comp2.component';
+// import { Comp1Component } from './comp1/comp1.component';
+// import { Comp2Component } from './comp2/comp2.component';
+import {HttpClientModule} from '@angular/common/http';
+// import { UserComponent } from './Services/user/user.component';
+import { PipedemoComponent } from './pipedemo/pipedemo.component';
+import { CountPipe } from './count.pipe';
+import { FilterPipe } from './filter.pipe';
+import { FilterpipeComponent } from './filterpipe/filterpipe.component';
 
 
 @NgModule({
@@ -41,15 +47,21 @@ import { Comp2Component } from './comp2/comp2.component';
     SimpleformoneComponent,
     ReactiveformComponent,
     TasktempletFromComponent,
-    Comp1Component,
-    Comp2Component,
+    // Comp1Component,
+    // Comp2Component,
+    // UserComponent,
+    PipedemoComponent,
+    CountPipe,
+    FilterPipe,
+    FilterpipeComponent
 
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
