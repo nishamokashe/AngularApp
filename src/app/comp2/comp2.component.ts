@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ServicelService } from '../Services/servicel.service';
+import { Service1Service } from '../Services/service1.service';
 
 @Component({
   selector: 'app-comp2',
@@ -7,14 +7,13 @@ import { ServicelService } from '../Services/servicel.service';
   styleUrls: ['./comp2.component.css']
 })
 export class Comp2Component implements OnInit {
-
   products = {};
-  // I have injected my serevice into constructor
-  constructor(private objService:ServicelService) { 
+  constructor() {
+    const objService = new Service1Service();
+    this.products = objService.products;
    }
 
   ngOnInit() {
-   // const objService = new ServicelService();
-    this.products = this.objService.products;
   }
+
 }
