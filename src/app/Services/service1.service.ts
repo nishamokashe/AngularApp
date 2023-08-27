@@ -3,7 +3,7 @@ import { Injectable } from '@angular/core';
 @Injectable({
   providedIn: 'root'
 })
-export class ServicelService {
+export class Service1Service {
   birthYear : number;
   getDob: number
   constructor() { }
@@ -14,11 +14,6 @@ export class ServicelService {
     { name: 'TV', id: '103'},
     { name: 'TAB', id: '104'}
   ]
-  
-  hello(){
-    alert('Hello all');
-    //API EMP LIST
-  }
   
   caluclateAge(DOB){
     this.getDob=DOB;
