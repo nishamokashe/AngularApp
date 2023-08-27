@@ -22,11 +22,23 @@ import { TasktempletFromComponent } from './tasktemplet-from/tasktemplet-from.co
 // import { Comp1Component } from './comp1/comp1.component';
 // import { Comp2Component } from './comp2/comp2.component';
 import {HttpClientModule} from '@angular/common/http';
-// import { UserComponent } from './Services/user/user.component';
 import { PipedemoComponent } from './pipedemo/pipedemo.component';
 import { CountPipe } from './count.pipe';
 import { FilterPipe } from './filter.pipe';
 import { FilterpipeComponent } from './filterpipe/filterpipe.component';
+import { AboutusComponent } from './aboutus/aboutus.component';
+import { HomeComponent } from './home/home.component';
+import { LoginComponent } from './login/login.component';
+import { ContactusComponent } from './contactus/contactus.component';
+import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
+import { ProductComponent } from './product/product.component';
+import { LaptopComponent } from './product/laptop/laptop.component';
+import { TvComponent } from './product/tv/tv.component';
+import { TabletComponent } from './product/tablet/tablet.component';
+import { WashingmachineComponent } from './product/washingmachine/washingmachine.component';
+import { PostComponent } from './post/post.component';
+import { PostdetailsComponent } from './postdetails/postdetails.component';
+
 
 
 @NgModule({
@@ -49,12 +61,22 @@ import { FilterpipeComponent } from './filterpipe/filterpipe.component';
     TasktempletFromComponent,
     // Comp1Component,
     // Comp2Component,
-    // UserComponent,
     PipedemoComponent,
     CountPipe,
     FilterPipe,
-    FilterpipeComponent
-
+    FilterpipeComponent,
+    AboutusComponent,
+    HomeComponent,
+    LoginComponent,
+    ContactusComponent,
+    PagenotfoundComponent,
+    ProductComponent,
+    LaptopComponent,
+    TvComponent,
+    TabletComponent,
+    WashingmachineComponent,
+    PostComponent,
+    PostdetailsComponent
   ],
   imports: [
     BrowserModule,
