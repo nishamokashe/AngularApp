@@ -1,0 +1,76 @@
+<p>form-assignment works!</p>
+
+<div class="container">
+    <div class="justify-content-center">
+        <div class="col-md-6 text-left rounded shadow py-5 p-3 mb-2 bg-primary text-white">
+            <div class="row justify-content-center "></div>    
+            <form (ngSubmit)="OnSubmit(myForm)" #myForm="ngForm">
+                <div class=" fw-bold fs-2 text-center p-3 mb-2 bg-light text-dark shadow p-3 mb-5 bg-body-tertiary rounded">Student Application From</div>
+                <div class="form-group">
+                   <label for="name">Name</label>
+                   <input type="text" class="form-control p-2 mb-2 bg-primary-subtle text-emphasis-primary my-2" id="name" name="name" ngModel placeholder="Enter your Name"required>
+                </div>
+                <div class="form-group">
+                   <label for="age">Age</label>
+                   <input type="number" class="form-control p-2 mb-2 bg-primary-subtle text-emphasis-primary my-2" id="age" name="age" ngModel placeholder="Enter your Name"required>
+                </div>
+
+                <div class="form-group">
+                    <label>Date of Birth</label>
+                    <input type="date" class="form-control p-2 mb-2 bg-primary-subtle text-emphasis-primary my-2" id="age" name="age" ngModel placeholder="Enter your Name"required>
+                 </div>
+ 
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="text" class="form-control p-2 mb-2 bg-primary-subtle text-emphasis-primary my-2 required autofocus" id="email" name="email" ngModel placeholder="Enter email address"email required>
+                 </div>
+                 <div class="form-group">
+                   <label for="PassWord">PassWord</label>
+                   <input type="text" class="form-control p-2 mb-2 bg-primary-subtle text-emphasis-primary my-2" id="PassWord'" name="PassWord" ngModel placeholder="Enter your Name"required>
+                </div>
+                 <div class="form-group">
+                    <label for="number">Phone Number</label>
+                    <input type="number" class="form-control p-2 mb-2 bg-primary-subtle text-emphasis-primary" id="number" name="number" ngModel placeholder="Enter your Name"required>
+                 </div>
+                 <div>  <label class="py-2">Gender</label> </div>
+                 <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1"required>
+                    <label class="form-check-label" for="flexRadioDefault1"> Male</label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2"required>
+                    <label class="form-check-label" for="flexRadioDefault2">Female</label>
+                  </div>
+                  <div class="form-group">
+                    <label class="py-2">Select Graduation</label>
+                    <select class="form-control" name="course" id="course" ngModel>
+                        <option value="BE"> BE </option>
+                        <option value="BCA"> BCA </option>
+                        <option value="MCA"> MCA </option>
+                        <option value="MSC"> MSC </option>
+                        <option value="BA"> BA </option>
+                        <option value="MBA"> MBA </option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <tr>
+                    <label >Country</label>
+                    <input type="text" value="India" readonly class="form-control p-2 mb-2 bg-primary-subtle text-emphasis-primary my-2 required autofocus"  name="" ngModel placeholder="Country">
+                    </tr>
+                </div>
+                 <div class="form-group">
+                    <tr>
+                    <label >State</label>
+                    <input type="text" value="MH" disabled readonly class=" py-2 form-control p-2 mb-2 bg-primary-subtle text-emphasis-primary my-2 required autofocus"  name="" ngModel placeholder="State">
+                    </tr>  
+                </div>
+                <div class="form-group">
+                    <label >Address</label>
+                    <input type="text" class=" form-control p-2 mb- bg-primary-subtle text-emphasis-primary my-2 required autofocus"  name="" ngModel placeholder="Address">
+                </div>
+                <button type="submit" class=" my-3 ms-5 btn btn-success mt-2">Submit</button>
+               <button type="reset" class="my-3 ms-5 btn btn-success mt-2">Clear All</button>
+            </form>
+        </div>
+    </div>
+</div>

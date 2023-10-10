@@ -1,0 +1,77 @@
+<form (ngSubmit)="OnSubmit(myForm)" #myForm="ngForm">
+    <div class="container mt-3">
+        <div class="row justify-content-center pt-5 pb-5">
+            <div class="col-sm-4 ">
+                <div class="row justify-content-center">
+                    <!-- <div class="col-sm-6"></div> -->
+                    <div class="col-sm-7 justify-content-center">
+                        <div class="profile mt-3">
+                            <img class="rounded-circle mx-3 my-3" src="assets\WhatsApp Image 2023-08-02 at 18.54.08.jpeg" height="140px" width="140px">
+                        </div>
+                        <h3 class="mx-1 my-4">Nisha Mokashe</h3>
+                        <p id="center">The Lorem ipum filling text is used by graphic designers, programmers and printers with the aim of occupying the spaces of a website, an advertising product or an editorial production whose final text is not yet ready.
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4" >
+                <h4 class="mt-5">User details</h4>
+                <div class="form-group">
+                    <input type="text" class="mt-4" id="fname" name="fname"  placeholder="Full Name*" ngModel required>
+                </div> 
+                <div class="form-group">
+                    <input id="date" class="mt-4" placeholder="Your birthday" type="text" onfocus="(this.type = 'date')"  id="date" ngModel >
+                </div> 
+                <div class="form-group">
+                    <select class="mt-4" name="gender" id="gender" (ngModel)="defaultValue" ngModel>
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                    </select>
+                </div>
+                <div class="d-inline-block form-group">
+                    <p class="mt-4">Country*</p>
+                    <select class="w-75" name="countryCode" id="countryCode" (ngModel)="defaultCountryCode" ngModel required>
+                        <option value="America">America</option>
+                        <option value="India">India</option>
+                        <option value="Pakistan">Pakistan</option>
+                        <option value="United State">United State</option>
+                        <option value="Qatar">Qater</option>
+                        <option value="Oman">Oman</option>
+                    </select>
+                </div> 
+                <div class="phone d-inline-block form-group">
+                    <input type="text" class="w-100 mt-4" id="phone" name="phone"  placeholder="Phone*" ngModel required>
+                </div> 
+                <div class=" d-inline-block form-group">
+                    <p class="mt-4">Bio</p>
+                    <textarea class="w-200" row="3s" id="bio"></textarea>
+                    <p>tell us about your self<span id=word>151/256</span></p>
+                </div> 
+            </div>
+            <div class="col-sm-4">
+                <h4 class="mt-5">Account details</h4>
+                <div class="form-group">
+                    <input type="text" class=" mt-4" id="username" name="username"  placeholder="Username*" ngModel required>
+                </div>
+                <div class="form-group">
+                    <input type="email" class=" mt-4" id="email"  (blur)="checkDomain($event.target.value)" #email="ngModel" name="email" placeholder="Email*" ngModel email required>
+                    <small class="text-danger" *ngIf="isCorrect">Domain Should be codemind.com</small>
+                </div>
+                <div class="form-group">
+                    <input type="password" class=" mt-4" id="pass" name="pass"  placeholder="Password*" ngModel required>
+                </div>
+                <div class="form-group mt-5">
+                    <input type="password" class="mt-4" id="conPass" name="conPass"  placeholder="Confirm Password*" ngModel required>
+                </div>
+                <div class=" ">
+                    <div class="checkbox ml-1 mt-5">
+                        <label><input style="width:20px;" type="checkbox"  name="tc" ngModel> I accept the Terms and Conditions</label>
+                    </div>
+                </div>
+                <button  type="submit" class=" mt-4 mb-5" >Submit</button>
+            </div>
+        </div>
+    </div>
+    </form> 
+    

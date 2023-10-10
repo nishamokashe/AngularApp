@@ -35,7 +35,6 @@ import { PostComponent } from './post/post.component';
 import { PostdetailsComponent } from './postdetails/postdetails.component';
 import { ProductsModule } from './products/products.module';
 import { UtilityModule } from './utility/utility.module';
-import { Service1Service } from './Services/service1.service';
 
 
 
@@ -77,16 +76,10 @@ import { Service1Service } from './Services/service1.service';
     FormsModule,
     ReactiveFormsModule,
     HttpClientModule,
+    ProductsModule,
     UtilityModule
   ],
-  providers: [Service1Service],
+  providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule {
-
- constructor()
-{
-  console.log("appModule Called");
-  
-}
-}
+export class AppModule { }

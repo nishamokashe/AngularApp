@@ -1,0 +1,13 @@
+.card{
+    display: inline-block;
+    /* margin: 15px 10px 10x 15px; */
+    max-width: 100%;
+    max-height: 100%;
+    text-align: center;
+}
+.products{
+    background-color: rgb(74, 41, 100);
+}
+.row{
+    background-color: black;
+}

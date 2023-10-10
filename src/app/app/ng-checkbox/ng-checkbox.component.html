@@ -1,0 +1,56 @@
+<input type="checkbox" (change)="onChange($event)"> 
+<!-- <input type="checkbox" (change)="onChange($event.target.checked)"> -->
+<div *ngIf="IsCheckd">
+  checkbox Selected
+</div>
+
+<div>
+  <div>
+      <h2>{{ title}}</h2>   
+  </div>
+  <div>
+          <div>
+                  <table class="table">
+                       <thead>
+                          <tr>
+                                  <th>
+                                    courseName   
+                                  </th>
+                                  <th>
+                                    CourseFees 
+                                  </th>
+                          </tr>
+                       </thead> 
+                       <tbody>
+                          <tr *ngFor="let webCours of courses">
+                                 <td> {{webCours.courseName}}</td>
+                                 <td> {{webCours.CourseFees}}</td>
+                          </tr>
+                       </tbody>          
+                  </table>
+          </div>
+  </div>
+</div>
+
+<div class="container">
+<div class="col-md-4">
+  <select class="form-control" (change)="getDataValue$(event)">
+    <option class="Default">Favourite superhero </option>
+    <option value="Groot">Groot</option>
+    <option value="Ironman">Ironman</option>
+    <option value="Hulk">Hulk</option>
+    <option value="Thor">Thor</option>
+    <option value="Spiderman">Spiderman</option>
+  </select>
+</div>
+<div>
+  <ul class="col-md-12" [ngSwitch]="superhero">
+    <h2 class="text-align:center" class="text-success" *ngSwitchDefault>Favourite superhero</h2>
+    <li class="text-success" *ngSwitchCase="'Groot'">Groot</li>
+    <li class="text-success" *ngSwitchCase="'Ironman'">Ironman</li>
+    <li class="text-success" *ngSwitchCase="'Hulk'">Hulk</li>
+    <li class="text-success" *ngSwitchCase="'Thor'">Thor</li>
+    <li class="text-success" *ngSwitchCase="'Spiderman'">Spiderman</li>
+  </ul>
+</div>
+</div>
